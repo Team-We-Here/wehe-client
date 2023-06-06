@@ -37,6 +37,7 @@ const InputWrapper = styled.div`
 
 const SettingWrapper = styled.div`
   display: flex;
+  cursor: pointer;
 
   .bell_icon {
     margin: 0 16px;
@@ -65,7 +66,7 @@ const WritingWrapper = styled.div`
     width: 29px;
     height: 29px;
     border-radius: 14px;
-    margin-right: 5px;
+    margin-right: 4px;
   }
 `;
 export { Container, MainWrapper, InputWrapper, SettingWrapper, WritingWrapper };

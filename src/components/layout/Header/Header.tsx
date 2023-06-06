@@ -31,6 +31,7 @@ const Header = () => {
               height: '36px',
               backgroundColor: '#3A3A3A',
               borderRadius: '18px',
+              cursor: 'pointer',
             }}
           />
         </S.SettingWrapper>
