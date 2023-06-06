@@ -1,4 +1,4 @@
-import Tag from '@/components/Tag/Tag';
+import Tag from '@src/components/Tag/Tag';
 
 import * as S from './SimplePostItem-styled';
 

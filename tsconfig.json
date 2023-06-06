@@ -14,14 +14,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"],
-      "@pages/*": ["pages/*"],
-      "@components/*": ["components/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@types/*": ["types/*"]
+      "@src/*": ["./src/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": ["next-env-custom.d.ts", "**/*.ts", "**/*.tsx", "jest.setup.js"],

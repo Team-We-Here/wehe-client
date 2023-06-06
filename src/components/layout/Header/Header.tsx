@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import BellIcon from '@/public/icons/header-bell.svg';
-import PenIcon from '@/public/icons/header-pen.svg';
-import SearchIcon from '@/public/icons/header-search.svg';
-import LogoSrc from '@/public/images/wehe-logo.png';
+import BellIcon from '@public/icons/header-bell.svg';
+import PenIcon from '@public/icons/header-pen.svg';
+import SearchIcon from '@public/icons/header-search.svg';
+import LogoSrc from '@public/images/wehe-logo.png';
 
 import { Input } from 'antd';
 
