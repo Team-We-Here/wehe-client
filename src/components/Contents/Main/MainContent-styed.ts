@@ -3,14 +3,15 @@ import styled from 'styled-components';
 const ContentWrapper = styled.div``;
 
 const TopContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
 `;
 
 const SimplePostItemWrapper = styled.div`
-  width: 50%;
-
   .title {
     height: 50px;
     display: flex;
