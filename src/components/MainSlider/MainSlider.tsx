@@ -1,4 +1,4 @@
-import { MainSliderSettings } from '@/src/constants/slider';
+import { MainSliderSettings } from '@src/constants/slider';
 
 import Slider from 'react-slick';
 
