@@ -1,10 +1,10 @@
 import type { AppProps } from 'next/app';
 
-import { antdConfig } from '@/src/constants/antd';
+import { antdConfig } from '@/constants/antd';
 
-import Header from '@/src/components/Layout/Header/Header';
+import Header from '@/components/Layout/Header/Header';
 
-import { GlobalStyle } from '@/src/styles/global-style';
+import { GlobalStyle } from '@/styles/global-style';
 
 import { ConfigProvider } from 'antd';
 
