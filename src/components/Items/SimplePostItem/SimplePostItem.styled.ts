@@ -15,7 +15,6 @@ const TitleWrapper = styled.div`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 60px;
 `;
 
 const TagWrapper = styled.div`

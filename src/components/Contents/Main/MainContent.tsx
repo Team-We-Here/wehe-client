@@ -6,7 +6,7 @@ import MainSlider from '@src/components/MainSlider/MainSlider';
 import NewIcon from '@public/icons/main-new.svg';
 import PopularIcon from '@public/icons/main-popular.svg';
 
-import * as S from './MainContent-styed';
+import * as S from './MainContent.styed';
 
 const MainContent = () => {
   return (
