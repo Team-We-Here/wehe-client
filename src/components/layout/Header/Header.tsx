@@ -7,7 +7,7 @@ import LogoSrc from '@public/images/wehe-logo.png';
 
 import { Input } from 'antd';
 
-import * as S from './Header-styled';
+import * as S from './Header.styled';
 
 const Header = () => {
   return (

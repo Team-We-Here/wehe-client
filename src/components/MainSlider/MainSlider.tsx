@@ -2,7 +2,7 @@ import { MainSliderSettings } from '@src/constants/slider';
 
 import Slider from 'react-slick';
 
-import * as S from './MainSlider-styled';
+import * as S from './MainSlider.styled';
 
 const MainSlider = () => {
   return (
