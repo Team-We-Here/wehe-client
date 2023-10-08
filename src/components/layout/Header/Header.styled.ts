@@ -69,4 +69,15 @@ const WritingWrapper = styled.div`
     margin-right: 4px;
   }
 `;
-export { Container, MainWrapper, InputWrapper, SettingWrapper, WritingWrapper };
+
+const LoginButton = styled.button`
+  background-color: #21827c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 33px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+`;
+
+export { Container, MainWrapper, InputWrapper, SettingWrapper, WritingWrapper, LoginButton };

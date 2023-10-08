@@ -1,4 +1,5 @@
 const MainSliderSettings = {
+  arrows: false,
   dots: true,
   infinite: true,
   slidesToShow: 1,

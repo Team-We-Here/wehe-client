@@ -1,7 +1,7 @@
 import { NewSimplePost, PopularSimplePost } from '@src/constants/mockData';
 
-import SimplePostItem from '@src/components/Items/SimplePostItem/SimplePostItem';
-import MainSlider from '@src/components/MainSlider/MainSlider';
+import SimplePostItem from '@src/components/Items/SimplePostItem';
+import MainSlider from '@src/components/MainSlider';
 
 import NewIcon from '@public/icons/main-new.svg';
 import PopularIcon from '@public/icons/main-popular.svg';
