@@ -5,6 +5,7 @@ import { antdConfig } from '@src/constants/antd';
 import Header from '@src/components/layout/Header';
 
 import { GlobalStyle } from '@src/styles/global-style';
+import '@src/styles/index.css';
 
 import { ConfigProvider } from 'antd';
 

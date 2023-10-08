@@ -13,8 +13,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 
-  //TODO: font-family 나눔고딕 해줘야함
-  html, body { 
+  html, body {     
+    font-family: 'Pretendard', sans-serif;
     width: 100%;
     height: 100%;
     min-width: 1200px;
