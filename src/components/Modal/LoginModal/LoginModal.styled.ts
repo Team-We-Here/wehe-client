@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  padding: 24px 48px;
+  padding: 32px 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -27,7 +27,7 @@ const TextWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   display: flex;
-  gap: 8px;
+  gap: 12px;
   margin-top: 40px;
 `;
 
