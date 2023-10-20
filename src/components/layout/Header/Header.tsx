@@ -19,7 +19,6 @@ const Header = () => {
     <S.Container>
       <S.MainWrapper>
         <Image src={LogoSrc} alt='로고' />
-
         {isLogin ? (
           <S.SettingWrapper>
             <S.WritingWrapper>
