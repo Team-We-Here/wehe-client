@@ -1,17 +1,21 @@
 import Image from 'next/image';
 
-import GithubLogoIcon from '@public/icons/github.svg';
-import GoogleLogoIcon from '@public/icons/google.svg';
-import KakaoLogoIcon from '@public/icons/kakao.svg';
+import FirstStepForm from '@src/components/StepForm/FirstStepForm';
+
 import ModalCloseIcon from '@public/icons/modal-close.svg';
 import LogingoSrc from '@public/images/login-logo.png';
 
 import { Modal } from 'antd';
+import { useState } from 'react';
 
-import * as S from './LoginModal.styled';
 import * as T from './LoginModal.type';
+import SocialLogin from './SocialLogin';
 
 const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
+  const [userData, setUserData] = useState(null);
+  const [firstData, setFirstData] = useState(null);
+  const [formStep, setFormStep] = useState(0);
+
   return (
     <Modal
       open={isOpen}
@@ -19,28 +23,13 @@ const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
       centered={true}
       footer={null}
       closeIcon={<ModalCloseIcon />}
+      title={userData && <Image src={LogingoSrc} width='159' alt='로고' />}
       width={600}>
-      <S.Container>
-        <Image src={LogingoSrc} alt='로고' />
-        <S.TextWrapper>
-          <span className='description'>모두, 함께 모이는 공간</span>
-          <span className='title'>WE-HE</span>
-        </S.TextWrapper>
-        <S.ButtonWrapper>
-          <S.LoginButtonWrapper $bgColor='#FEE500' $borderColor='#FEE500' $color='#240B0B'>
-            <span>Kakao</span>
-            <KakaoLogoIcon />
-          </S.LoginButtonWrapper>
-          <S.LoginButtonWrapper $bgColor='#FFF' $borderColor='#3A3A3A' $color='3A3A3A'>
-            <span>Google</span>
-            <GoogleLogoIcon />
-          </S.LoginButtonWrapper>
-          <S.LoginButtonWrapper $bgColor='#363636' $borderColor='#363636' $color='#FFF'>
-            <span>Github</span>
-            <GithubLogoIcon />
-          </S.LoginButtonWrapper>
-        </S.ButtonWrapper>
-      </S.Container>
+      {!userData && <SocialLogin setUserData={setUserData} />}
+      {userData && formStep === 0 && (
+        <FirstStepForm setFormStep={setFormStep} setFirstData={setFirstData} />
+      )}
+      {firstData && formStep === 1 && <div> hi </div>}
     </Modal>
   );
 };
