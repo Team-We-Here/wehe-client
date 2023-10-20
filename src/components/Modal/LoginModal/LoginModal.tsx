@@ -13,9 +13,8 @@ import SocialLogin from './SocialLogin';
 
 const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
   const [userData, setUserData] = useState(null);
+  const [firstData, setFirstData] = useState(null);
   const [formStep, setFormStep] = useState(0);
-
-  console.log(userData);
 
   return (
     <Modal
@@ -27,7 +26,10 @@ const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
       title={userData && <Image src={LogingoSrc} width='159' alt='로고' />}
       width={600}>
       {!userData && <SocialLogin setUserData={setUserData} />}
-      {userData && formStep === 0 && <FirstStepForm />}
+      {userData && formStep === 0 && (
+        <FirstStepForm setFormStep={setFormStep} setFirstData={setFirstData} />
+      )}
+      {firstData && formStep === 1 && <div> hi </div>}
     </Modal>
   );
 };

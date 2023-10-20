@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Form } from 'antd';
+
 export const Layout = styled.section`
   display: flex;
   flex-direction: column;
@@ -26,7 +28,7 @@ export const RequiredDescription = styled.span`
   color: #c14e4e;
 `;
 
-export const UploadForm = styled.form`
+export const ProfileUploadForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +38,7 @@ export const UploadForm = styled.form`
   align-self: center;
 `;
 
-export const UploadLabel = styled.label`
+export const ProfileUploadLabel = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,10 +52,22 @@ export const UploadLabel = styled.label`
   cursor: pointer;
 `;
 
-export const UploadInput = styled.input`
+export const ProfileUploadInput = styled.input`
   display: none;
 `;
 
-export const UploadText = styled.span`
+export const ProfileUploadText = styled.span`
   font-size: 14px;
+`;
+
+export const UploadForm = styled(Form)`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const UploadWrapper = styled(Form.Item)`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 `;
