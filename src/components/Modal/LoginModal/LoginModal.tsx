@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import FirstStepForm from '@src/components/StepForm/FirstStepForm';
+import SecondStepForm from '@src/components/StepForm/SecondStepForm';
 
 import ModalCloseIcon from '@public/icons/modal-close.svg';
 import LogingoSrc from '@public/images/login-logo.png';
@@ -29,7 +30,7 @@ const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
       {userData && formStep === 0 && (
         <FirstStepForm setFormStep={setFormStep} setFirstData={setFirstData} />
       )}
-      {firstData && formStep === 1 && <div> hi </div>}
+      {firstData && formStep === 1 && <SecondStepForm />}
     </Modal>
   );
 };
