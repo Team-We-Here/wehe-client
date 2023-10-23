@@ -28,6 +28,7 @@ const FirstStepForm = ({ setFirstData, setFormStep }: Props) => {
   const handleNextStep = (evt: any) => {
     evt.preventDefault();
     setFormStep(1);
+    setFirstData(true);
   };
 
   return (
