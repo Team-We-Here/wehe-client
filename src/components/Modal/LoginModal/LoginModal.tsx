@@ -9,6 +9,7 @@ import LogingoSrc from '@public/images/login-logo.png';
 import { Modal } from 'antd';
 import { useState } from 'react';
 
+import * as S from './LoginModal.styled';
 import * as T from './LoginModal.type';
 import SocialLogin from './SocialLogin';
 
@@ -25,12 +26,16 @@ const LoginModal = ({ isOpen, close }: T.LoginModalProps) => {
       footer={null}
       closeIcon={<ModalCloseIcon />}
       title={userData && <Image src={LogingoSrc} width='159' alt='로고' />}
+      style={{
+        position: 'relative',
+      }}
       width={600}>
       {!userData && <SocialLogin setUserData={setUserData} />}
       {userData && formStep === 0 && (
         <FirstStepForm setFormStep={setFormStep} setFirstData={setFirstData} />
       )}
       {firstData && formStep === 1 && <SecondStepForm />}
+      {formStep === 1 && <S.SignupButton type='primary'> 완료 </S.SignupButton>}
     </Modal>
   );
 };
