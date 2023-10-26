@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Button } from 'antd';
+
 const Container = styled.div`
   display: flex;
   padding: 32px 0;
@@ -51,4 +53,10 @@ const LoginButtonWrapper = styled.button<{
   }
 `;
 
-export { Container, TextWrapper, LoginButtonWrapper, ButtonWrapper };
+const SignupButton = styled(Button)`
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+`;
+
+export { Container, TextWrapper, LoginButtonWrapper, ButtonWrapper, SignupButton };
