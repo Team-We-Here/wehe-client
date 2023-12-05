@@ -1,0 +1,22 @@
+.banner-container {
+  width: 100vw;
+  height: 198px;
+
+  border-bottom: 1px solid #676767;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerSwiper {
+  max-width: 962px;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

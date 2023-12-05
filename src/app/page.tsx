@@ -1,7 +1,9 @@
+import MainBanner from "@/components/main/Banner/MainBanner";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div> 테스트 </div>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <MainBanner />
     </main>
   );
 }
