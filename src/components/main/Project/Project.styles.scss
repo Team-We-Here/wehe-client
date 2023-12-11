@@ -1,0 +1,37 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px 20px;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  border: 1px solid #21827c;
+}
+
+.project__content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.name-box {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.name-box__text {
+  font-size: 12px;
+}
+
+.deadline-text {
+  font-size: 12px;
+  color: #767676;
+}

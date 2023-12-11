@@ -14,6 +14,9 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    domains: ["picsum.photos"],
+  },
 };
 
 module.exports = nextConfig;
